@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Continue Watch</string>
-    <string name="seconds">Seconds elapsed: </string>
+    <string name="seconds">Seconds elapsed:  %d</string>
     <string name="textview">TextView</string>
+    <string name="hello_world">Hello world</string>
 
 </resources>

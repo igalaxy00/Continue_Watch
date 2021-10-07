@@ -1,5 +1,6 @@
 package ru.spbstu.icc.kspt.lab2.continuewatch
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -14,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         while (true) {
             if (MyThread) secondsElapsed++
             textSecondsElapsed.post {
-                textSecondsElapsed.setText(getString(R.string.seconds) + secondsElapsed)
+                textSecondsElapsed.text = getString(R.string.seconds, secondsElapsed)
             }
             Thread.sleep(1000)
         }
